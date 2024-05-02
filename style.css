@@ -97,10 +97,16 @@ img {
     flex-direction: column;
     gap: 2em;
     align-items: center;
+    color: #000000;
 }
 
 .content {
     width: 80%;
+}
+
+.fs-18{
+    font-size: 1.2rem;
+
 }
 
 footer {
