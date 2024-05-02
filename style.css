@@ -100,6 +100,11 @@ img {
     color: #ffffff;
 }
 
+.conteneur img {
+    display: block; /* Pour que l'image occupe toute la largeur disponible */
+    margin: 0 auto; /* Pour centrer l'image horizontalement */
+}
+
 .content {
     width: 80%;
 }
