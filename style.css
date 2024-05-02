@@ -140,8 +140,8 @@ footer {
 }
 
 .bloc {
-    background-color: #ff00e1a4;
-    border: 1px solid #6f0083;
+    background-color: #7f01b968;
+    border: 1px solid #460152;
     padding: 40px; /* Augmente l'espace intérieur */
     margin-bottom: 20px; /* Réduit l'espace entre les blocs */
     text-align: center;
@@ -166,8 +166,8 @@ footer {
 }
 
 .bloc3 {
-    background-color: #ff00e1a4;
-    border: 1px solid #6f0083;
+    background-color: #7f01b968;
+    border: 1px solid #460152;
     text-align: center;
     box-sizing: border-box;
     border-radius: 10px;
