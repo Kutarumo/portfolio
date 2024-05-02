@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Charger la police personnalisée */
+@font-face {
+    font-family: 'japan-wave';
+    src: url('../japan-wave/Japan\ wave.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Styles pour l'élément .bg-nav */
+.bg-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.bg-nav.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+#btn-nav-menu {
+    cursor: pointer; /* Utilise le curseur pointer pour indiquer l'interaction */
+    z-index: 10002;
+    position: fixed;
+    top: 10px; /* Position en haut */
+    left: 10px; /* Position à gauche */
+    width: 68px;
+    height: 68px;
+    background-image: url(https://i.imgur.com/sD4ZGkn_d.png?maxwidth=640);
+    background-position: -69px -161px !important;
+    background-size: 341px 229px;
+    transition: transform 1.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@media screen and (max-width: 640px) {
+    /* Pour les écrans de taille maximale de 640px */
+    #btn-nav-menu {
+        top: 5px; /* Réajustement pour une taille d'écran plus petite */
+        left: 5px; /* Réajustement pour une taille d'écran plus petite */
+    }
+}
+
+#btn-nav-menu.show {
+    transform: translate3d(0, 0, 0);
+}
+
+#nav-menu {
+    pointer-events: none;
+    z-index: 10001;
+    position: fixed;
+    top: 50%; /* Position verticale au milieu de la fenêtre */
+    left: 10px; /* Position en haut à gauche */
+    transform: translateY(-50%); /* Pour centrer verticalement */
+}
+
+@media screen and (max-width: 640px) {
+    /* Pour les écrans de taille maximale de 640px */
+    #nav-menu {
+        top: 50%; /* Position verticale au milieu de la fenêtre */
+        left: 5px; /* Réajustement pour une taille d'écran plus petite */
+        transform: translateY(-50%); /* Pour centrer verticalement */
+    }
+}
+
+#nav-menu li[class^="nav-"] a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+#nav-menu.show {
+    pointer-events: auto;
+}
+
+#nav-menu.show .nav-1 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-property: transform, opacity;
+    transition-duration: 0.6s;
+    transition-delay: 0.1s;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#nav-menu.show .nav-2 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-property: transform, opacity;
+    transition-duration: 0.6s;
+    transition-delay: 0.2s;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#nav-menu.show .nav-3 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-property: transform, opacity;
+    transition-duration: 0.6s;
+    transition-delay: 0.3s;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#nav-menu.show .nav-4 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-property: transform, opacity;
+    transition-duration: 0.6s;
+    transition-delay: 0.4s;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#nav-menu.show .nav-5 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-property: transform, opacity;
+    transition-duration: 0.6s;
+    transition-delay: 0.5s;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+  
+
+#nav-menu li[class^="nav-"] {
+    opacity: 0;
+    margin-top: 40px;
+}
+
+#nav-menu li[class^="nav-"] a {
+    background-image: url(https://i.imgur.com/sD4ZGkn_d.png?maxwidth=640);
+    background-size: 341px 229px;
+}
+
+#nav-menu .nav-1 {
+    transition: transform 0.4s ease 0.5s, opacity 0.4s ease 0.5s;
+    width: 83px;
+    height: 48px;
+    transform: translate3d(0, 300px, 0);
+}
+
+#nav-menu .nav-2 {
+    transition: transform 0.4s ease 0.4s, opacity 0.4s ease 0.4s;
+    width: 96px;
+    height: 48px;
+    transform: translate3d(0, 250px, 0);
+}
+
+#nav-menu .nav-3 {
+    transition: transform 0.4s ease 0.3s, opacity 0.4s ease 0.3s;
+    width: 100px;
+    height: 48px;
+    transform: translate3d(0, 250px, 0);
+}
+
+#nav-menu .nav-4 {
+    transition: transform 0.4s ease 0.2s, opacity 0.4s ease 0.2s;
+    width: 83px;
+    height: 48px;
+    transform: translate3d(0, 200px, 0);
+}
+
+#nav-menu .nav-5 {
+    transition: transform 0.4s ease 0.1s, opacity 0.4s ease 0.1s;
+    width: 90px;
+    height: 48px;
+    transform: translate3d(0, 150px, 0);
+}
+
+#nav-menu .nav-1 a {
+    background-position: -251px -49px !important;
+}
+
+#nav-menu .nav-2 a {
+    background-position: -138px -161px !important;
+}
+
+#nav-menu .nav-3 a {
+    background-position: -116px -112px !important;
+}
+
+#nav-menu .nav-4 a {
+    background-position: -251px -98px !important;
+}
+
+#nav-menu .nav-5 a {
+    background-position: -251px 0px !important;
+}

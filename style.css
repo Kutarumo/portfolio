@@ -1,0 +1,201 @@
+@import url("style/css/main.css");
+
+/* Styles généraux */
+body {
+    font-family: 'japan-wave', sans-serif; /* Utiliser la police personnalisée */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Utilise toute la hauteur de la fenêtre */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Styles pour l'élément .reveal */
+.reveal {
+    position: absolute;
+    top: 0;
+    display: flex;
+    color: #ffffff;
+    font-size: 2em;
+    font-family: japan-wave, sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    white-space: pre;
+}
+
+.reveal span {
+    opacity: 0;
+    transform: scale(0);
+    animation: fadeIn 2.4s forwards;
+}
+
+.reveal::before, .reveal::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    transform: scale(0);
+}
+
+.reveal::before {
+    left: 50%;
+    animation: slideLeft 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+}
+
+.reveal::after {
+    right: 50%;
+    animation: slideRight 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideLeft {
+    to {
+        left: -6%;
+        opacity: 1;
+        transform: scale(0.9);
+    }
+}
+
+@keyframes slideRight {
+    to {
+        right: -6%;
+        opacity: 1;
+        transform: scale(0.9);
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex: 1; /* Utilise tout l'espace disponible dans le contenu principal */
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+.content {
+    width: 80%;
+}
+
+footer {
+    background-color: #67000068;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Positionnement fixe */
+    bottom: 0; /* Alignement en bas */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Assure que le footer est au-dessus du contenu */
+}
+
+/* Styles spécifiques à chaque page */
+.hero {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.bloc {
+    background-color: #ff00e1a4;
+    border: 1px solid #6f0083;
+    padding: 40px; /* Augmente l'espace intérieur */
+    margin-bottom: 20px; /* Réduit l'espace entre les blocs */
+    text-align: center;
+    width: calc(50% - 40px); /* Largeur de chaque bloc */
+    margin-right: 40px; /* Marge à droite de chaque bloc */
+    float: left;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.bloc h3 {
+    font-size: 40px; /* Augmente la taille de la police du titre */
+    color: #ffffff;
+    margin-bottom: 20px; /* Augmente l'espace sous le titre */
+}
+
+.bloc p {
+    font-size: 30px; /* Augmente la taille de la police du paragraphe */
+    color: #ffffff;
+    margin-bottom: 20px; /* Augmente l'espace sous le paragraphe */
+    text-align: center; /* Centre le texte à l'intérieur */
+}
+
+.bloc3 {
+    background-color: #ff00e1a4;
+    border: 1px solid #6f0083;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.bloc3 h3 {
+    font-size: 40px; /* Augmente la taille de la police du titre */
+    color: #ffffff;
+    margin-bottom: 20px; /* Augmente l'espace sous le titre */
+}
+
+.bloc3 p {
+    font-size: 30px; /* Augmente la taille de la police du paragraphe */
+    color: #ffffff;
+    margin-bottom: 20px; /* Augmente l'espace sous le paragraphe */
+    text-align: center; /* Centre le texte à l'intérieur */
+}
+.bloc4 {
+    background-color: #ff00e1a4;
+    border: 1px solid #6f0083;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.bloc4 h3 {
+    font-size: 40px; /* Augmente la taille de la police du titre */
+    color: #ffffff;
+    margin-bottom: 20px; /* Augmente l'espace sous le titre */
+}
+
+.bloc4 p {
+    font-size: 30px; /* Augmente la taille de la police du paragraphe */
+    color: #ffffff;
+    margin-bottom: 20px; /* Augmente l'espace sous le paragraphe */
+    text-align: center; /* Centre le texte à l'intérieur */
+}

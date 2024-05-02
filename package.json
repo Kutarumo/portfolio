@@ -1,0 +1,24 @@
+{
+    "name": "sword-art-online-style",
+    "version": "1.0.0",
+    "description": "Site web inspiré du style de Sword Art Online",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "keywords": [
+      "sword art online",
+      "site web",
+      "css",
+      "html",
+      "javascript",
+      "node.js",
+      "express.js"
+    ],
+    "author": "Enzo Moret",
+    "license": "MIT",
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  
