@@ -104,11 +104,6 @@ img {
     width: 80%;
 }
 
-.content img {
-    display: block; /* Pour que l'image occupe toute la largeur disponible */
-    margin: 0 auto; /* Pour centrer l'image horizontalement */
-}
-
 .fs-18{
     font-size: 1.2rem;
 
