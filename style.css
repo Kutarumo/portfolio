@@ -139,7 +139,7 @@ footer {
 }
 
 .bloc {
-    background-color: #7f01b968;
+    background-color: #7f01b97c;
     border: 1px solid #460152;
     padding: 40px; /* Augmente l'espace intérieur */
     margin-bottom: 20px; /* Réduit l'espace entre les blocs */
@@ -165,7 +165,7 @@ footer {
 }
 
 .bloc3 {
-    background-color: #7f01b968;
+    background-color: #7f01b97c;
     border: 1px solid #460152;
     text-align: center;
     box-sizing: border-box;
@@ -185,8 +185,8 @@ footer {
     text-align: center; /* Centre le texte à l'intérieur */
 }
 .bloc4 {
-    background-color: #ff00e1a4;
-    border: 1px solid #6f0083;
+    background-color: #7f01b97c;
+    border: 1px solid #460152;
     text-align: center;
     box-sizing: border-box;
     border-radius: 10px;
