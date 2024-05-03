@@ -13,19 +13,6 @@
     font-style: normal;
 }
 
-#background-video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    min-width: 100%;
-    min-height: 100%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    z-index: -1;
-}
-
 /* Styles pour l'élément .bg-nav */
 .bg-nav {
     position: fixed;
@@ -34,7 +21,6 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 10000;
     opacity: 0;
     transition: opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -47,7 +33,6 @@
 
 #btn-nav-menu {
     cursor: pointer; /* Utilise le curseur pointer pour indiquer l'interaction */
-    z-index: 10002;
     position: fixed;
     top: 10px; /* Position en haut */
     left: 10px; /* Position à gauche */
@@ -73,7 +58,6 @@
 
 #nav-menu {
     pointer-events: none;
-    z-index: 10001;
     position: fixed;
     top: 50%; /* Position verticale au milieu de la fenêtre */
     left: 10px; /* Position en haut à gauche */

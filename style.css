@@ -137,7 +137,6 @@ footer {
     font-size: 18px;
     margin-bottom: 30px;
 }
-
 .bloc {
     background-color: #7f01b97c;
     border: 1px solid #460152;
@@ -152,24 +151,28 @@ footer {
 }
 
 .bloc h3 {
-    font-size: 40px; /* Augmente la taille de la police du titre */
+    font-size: 28px; /* Ajuste la taille de la police du titre */
     color: #ffffff;
     margin-bottom: 20px; /* Augmente l'espace sous le titre */
 }
 
 .bloc p {
-    font-size: 30px; /* Augmente la taille de la police du paragraphe */
+    font-size: 24px; /* Ajuste la taille de la police du paragraphe */
     color: #ffffff;
     margin-bottom: 20px; /* Augmente l'espace sous le paragraphe */
     text-align: center; /* Centre le texte à l'intérieur */
 }
 
+
 .bloc3 {
+    display: flex;
     background-color: #7f01b97c;
     border: 1px solid #460152;
     text-align: center;
     box-sizing: border-box;
     border-radius: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .bloc3 h3 {
@@ -211,9 +214,13 @@ footer {
     color: white; /* Couleur du texte du lien */
     text-decoration: underline; /* Soulignement du texte du lien */
     cursor: pointer; /* Curseur au survol du lien */
+    z-index: 10000;
 }
 
 /* Style du lien au survol */
 .lien:hover {
     color: pink; /* Couleur du texte du lien au survol */
 }
+
+
+
